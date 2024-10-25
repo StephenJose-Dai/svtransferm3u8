@@ -1,0 +1,128 @@
+body {
+    background-color: #f0f0f0;
+    color: #000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #fff;
+    }
+}
+
+a {
+    color: inherit; /* 继承父元素的颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+a:hover {
+    text-decoration: underline; /* 悬停时显示下划线 */
+}
+
+/* 明亮模式下的颜色 */
+@media (prefers-color-scheme: light) {
+    a {
+        color: #000000; /* 黑色 */
+    }
+}
+
+/* 暗黑模式下的颜色 */
+@media (prefers-color-scheme: dark) {
+    a {
+        color: #ffffff; /* 白色 */
+    }
+}
+
+#progress {
+    width: 70%;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    display: none;
+    margin-top: 20px;
+    position: relative;
+}
+
+#progressBar {
+    width: 0;
+    height: 30px;
+    background-color: #4caf50;
+    position: relative;
+}
+
+#progressText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+#status {
+    margin-top: 10px;
+}
+
+#resultContainer {
+    width: 70%;
+    height: 50%; /* 设置为固定高度 */
+    overflow-y: auto; /* 使结果部分可滚动 */
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.copy-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: #45a049;
+}
+
+.upload-button, .file-input, .export-button {
+    padding: 15px 30px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    height: 50px;
+}
+
+.upload-button:hover, .file-input:hover, .export-button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    position: absolute; 
+    bottom: 10px; 
+    width: 100%; 
+    text-align: center; 
+    font-size: 12px; 
+    color: inherit; /* 继承字体颜色 */
+}
