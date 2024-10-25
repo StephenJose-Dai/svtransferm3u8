@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	<script>scr="./jsf/jsf.js"</script>
+	<link>./css/style.css</link>
+    <title>音频和视频上传并生成M3U8</title>
+</head>
+<body>
+    <h1>上传音频和视频文件并生成M3U8</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="fileInput" class="file-input">选择文件</label>
+        <input type="file" id="fileInput" accept="video/*,audio/*" multiple style="display:none;">
+        <button type="submit" class="upload-button" style="display: none;">上传并转换</button>
+        <button type="button" class="export-button" style="display: none;">导出URL</button>
+    </form>
+    <div id="progress">
+        <div id="progressBar">
+            <span id="progressText">0%</span>
+        </div>
+    </div>
+    <div id="status"></div>
+    <div id="resultContainer"></div>
+	<br>
+	<br>
+    <footer>
+        <div>
+            <p>您是第<span id="busuanzi_value_site_pv"></span>位访问本站的游客</p>
+        </div>
+        © <span id="year"></span> <a href="https://daishenghui.club">戴戴的Linux All Rights Reserved.</a> <a href="https://daishenghui.club">戴戴的Linux版权所有.</a> 由 <a href="https://daishenghui.club" target="_blank">戴戴的Linux</a> &nbsp <a href="https://www.zwyktech.cn" target="_blank">福建省智网云科科技有限公司</a> 提供技术支持
+    </footer>
+</body>
+</html>
