@@ -5,7 +5,7 @@
 ###### 该工具前端由html、js、css语言编写，后端由python和ffmpeg编写
 
 ## 部署文档
-###### 详细部署文档请点击这里查看
+###### 详细部署文档请点击这里查看 <a href="https://www.daishenghui.club/2024/10/26/categories/Linux/CentOS9%E9%83%A8%E7%BD%B2%E9%9F%B3%E8%A7%86%E9%A2%91%E8%BD%ACm3u8%E7%B3%BB%E7%BB%9F/">https://www.daishenghui.club/2024/10/26/categories/Linux/CentOS9%E9%83%A8%E7%BD%B2%E9%9F%B3%E8%A7%86%E9%A2%91%E8%BD%ACm3u8%E7%B3%BB%E7%BB%9F/</a>
 ## 版权和致谢
 ###### 该项目由戴戴的Linux和福建省智网云科科技有限公司一起开发和提供技术支撑。
 ###### 如果在部署过程中遇到问题需要支援，可扫描下面微信公众号与作者取得联系，作者将会无偿支援你，如果是用于商业，那作者将会收取20块钱的支援费用作麦咖啡提神用，哈哈
